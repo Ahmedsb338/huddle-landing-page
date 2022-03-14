@@ -1,0 +1,150 @@
+/* Start Global Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+}
+/* End Global rules */
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../images/bg-desktop.svg');
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    display: grid;
+    grid-template-rows: auto 1fr 60px 40px;
+    grid-template-areas: "logo logo logo logo" 
+    "content content content content"
+    "icons icons icons icons"
+    "footer footer footer footer";
+} 
+header {
+    grid-area: logo;
+    margin-bottom: 100px;
+}
+@media (max-width: 767px) {
+    .container {
+        background-image: url('../images/bg-mobile.svg');
+        background-size: contain;
+    }
+    header {
+        margin-bottom: 20px;
+        padding: 30px;
+    }
+    header img {
+        width: 150px;
+    }
+}
+.content {
+    display: flex;
+    align-items: center; 
+    gap: 0 50px;
+}
+@media (max-width: 767px) {
+    .content {
+        flex-direction: column;
+    }
+    .image img {
+        max-width: 100%;
+        padding: 30px;
+    }
+}
+@media (max-width: 991px) {
+    .content {
+        flex-wrap: wrap;
+    }
+}
+.text {
+    color: #fff;
+    padding: 10px;
+}
+@media (max-width: 767px) {
+    .text {
+        padding: 30px;
+        text-align: center;
+    }
+}
+.text h2, .text p {
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.text h2 {
+    font-size: 45px;
+}
+@media (max-width: 767px) {
+    .text h2 {
+        font-size: 22px;
+    }
+}
+.text p {
+    font-size: 18px;
+}
+.text .bottom {
+    padding: 5px 40px;
+    background-color: #fff;
+    width: fit-content;
+    color: hsl(257, 40%, 49%);
+    border-radius: 20px 20px ;
+    -webkit-border-radius: 20px 20px ;
+    -moz-border-radius: 20px 20px ;
+    -ms-border-radius: 20px 20px ;
+    -o-border-radius: 20px 20px ;
+}
+@media (max-width: 767px) {
+    .text .bottom {
+        margin: 20px auto;
+        font-size: 14px;
+    }
+}
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: icons;
+    gap: 20px;
+    color: #fff;
+}
+.icons i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+@media (max-width: 767px) {
+    .icons {
+        gap: 10px;
+        justify-content: center;
+    }
+    .icons i{
+        width: 30px;
+        height: 30px;
+    }
+}
+footer {
+    grid-area: footer;
+    margin: 40px auto 10px;
+    padding: 10px;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(257, 40%, 49%); 
+}
