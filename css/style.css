@@ -137,14 +137,3 @@ header {
         height: 30px;
     }
 }
-footer {
-    grid-area: footer;
-    margin: 40px auto 10px;
-    padding: 10px;
-}
-.attribution { 
-    font-size: 11px; text-align: center; 
-}
-.attribution a { 
-    color: hsl(257, 40%, 49%); 
-}
