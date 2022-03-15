@@ -30,6 +30,7 @@ h1, h2, h3, h4 {
     "footer footer footer footer";
 } 
 header {
+    padding-top: 50px;
     grid-area: logo;
     margin-bottom: 100px;
 }
