@@ -29,9 +29,12 @@ h1, h2, h3, h4 {
     "icons icons icons icons";
 } 
 header {
-    padding-top: 50px;
+    padding-top: 40px;
     grid-area: logo;
     margin-bottom: 100px;
+}
+header img {
+    width: 200px;
 }
 @media (max-width: 767px) {
     .container {
