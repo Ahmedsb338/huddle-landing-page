@@ -15,8 +15,8 @@ h1, h2, h3, h4 {
 }
 /* End Global rules */
 .container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-left: auto;
     margin-right: auto;
     background-image: url('../images/bg-desktop.svg');
@@ -29,7 +29,7 @@ h1, h2, h3, h4 {
     "icons icons icons icons";
 } 
 header {
-    padding-top: 60px;
+    padding-top: 50px;
     grid-area: logo;
     margin-bottom: 90px;
 }
@@ -52,8 +52,7 @@ header img {
     }
 }
 .content {
-    display: flex;
-    align-items: center; 
+    display: flex; 
     gap: 0 50px;
 }
 @media (max-width: 767px) {
@@ -71,6 +70,7 @@ header img {
     }
 }
 .text {
+    margin-top: 30px;
     color: #fff;
     padding: 10px;
 }
@@ -96,7 +96,7 @@ header img {
     font-size: 18px;
 }
 .text .bottom {
-    padding: 10px 40px;
+    padding: 15px 45px;
     background-color: #fff;
     width: fit-content;
     color: hsl(257, 40%, 49%);
