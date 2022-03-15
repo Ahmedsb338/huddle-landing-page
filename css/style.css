@@ -23,11 +23,10 @@ h1, h2, h3, h4 {
     background-size: cover;
     background-color: hsl(257, 40%, 49%);
     display: grid;
-    grid-template-rows: auto 1fr 60px 40px;
+    grid-template-rows: auto 1fr 60px;
     grid-template-areas: "logo logo logo logo" 
     "content content content content"
-    "icons icons icons icons"
-    "footer footer footer footer";
+    "icons icons icons icons";
 } 
 header {
     padding-top: 50px;
